@@ -8,9 +8,14 @@ const educationFormModel = {
       requiredErrorMsg: "Organization Name is required.",
     },
     address: {
-      name: "",
-      label: "",
-      initialValue: {},
+      name: "address",
+      label: "Address",
+      initialValue: {
+        address: "",
+        city: "",
+        country: "",
+        postCode: "",
+      },
       requiredErrorMsg: "Address is required.",
     },
     type: {

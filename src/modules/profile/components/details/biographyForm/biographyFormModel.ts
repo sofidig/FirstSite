@@ -13,33 +13,44 @@ const biographyFormModel = {
       initialValue: "",
       requiredErrorMsg: "Last Name is required.",
     },
-    company: {
-      name: "company",
-      label: "Company",
+    address: {
+      name: "address",
+      label: "Address",
       initialValue: {
-        name: "",
-        description: "",
-        address: {
-          address: "",
-          city: "",
-          country: "",
-          postCode: "",
-        },
+        address: "",
+        city: "",
+        country: "",
+        postCode: "",
       },
-      requiredErrorMsg: "Company Name is required.",
+      requiredErrorMsg: "Address is required.",
     },
-    jobRole: {
-      name: "jobRole",
-      label: "Job Role",
-      initialValue: "",
-      requiredErrorMsg: "Job Role is required.",
-    },
-    image: {
-      name: "image",
-      label: "Image",
-      initialValue: "",
-      requiredErrorMsg: "Image is required.",
-    },
+    // company: {
+    //   name: "company",
+    //   label: "Company",
+    //   initialValue: {
+    //     name: "",
+    //     description: "",
+    //     address: {
+    //       address: "",
+    //       city: "",
+    //       country: "",
+    //       postCode: "",
+    //     },
+    //   },
+    //   requiredErrorMsg: "Company Name is required.",
+    // },
+    // jobRole: {
+    //   name: "jobRole",
+    //   label: "Job Role",
+    //   initialValue: "",
+    //   requiredErrorMsg: "Job Role is required.",
+    // },
+    // image: {
+    //   name: "image",
+    //   label: "Image",
+    //   initialValue: "",
+    //   requiredErrorMsg: "Image is required.",
+    // },
   },
 };
 

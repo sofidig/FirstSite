@@ -9,6 +9,7 @@ import UserApi from "../../../../apis/UserApi";
 import ProfessionApi from "../../../../apis/ProfessionApi";
 import { ProfessionalDetail } from "../../../../application/models/ProfessionalDetailModels";
 import CompanyField from "../../../../shared/formFields/CompanyField";
+import { HiTrash } from "react-icons/hi";
 
 const ProfessionalForm = ({
   professional,
@@ -41,6 +42,13 @@ const ProfessionalForm = ({
       setShowModal(false);
     } catch (e) {
       console.log(e);
+    }
+  };
+
+  const deleteData = async () => {
+    if (professional) {
+      await ProfessionApi.deleteProfessionAsync(professional._id!);
+      setShowModal(false);
     }
   };
 
@@ -78,6 +86,10 @@ const ProfessionalForm = ({
                 name={duration.name}
                 type="text"
               /> */}
+              <HiTrash
+                className="h-8 w-8 cursor-pointer"
+                onClick={deleteData}
+              />
 
               <div className="space-x-4">
                 <SaveButton />

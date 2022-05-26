@@ -128,7 +128,7 @@ export default function DetailsTab({ userData }: { userData: any }) {
               "ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2"
             )}
           >
-            <Biography />
+            <Biography details={userData?.biography} />
           </Tab.Panel>
           <Tab.Panel
             className={classNames(
@@ -136,7 +136,7 @@ export default function DetailsTab({ userData }: { userData: any }) {
               "ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2"
             )}
           >
-            <Education />
+            <Education details={userData?.educationalDetails} />
           </Tab.Panel>
           <Tab.Panel
             className={classNames(
@@ -152,7 +152,7 @@ export default function DetailsTab({ userData }: { userData: any }) {
               "ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2"
             )}
           >
-            <Project />
+            <Project details={userData?.projectDetails} />
           </Tab.Panel>
         </Tab.Panels>
       </Tab.Group>
